@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NomadVides your DayByDay Itinerarie</title>
+    <title>NomadVibe your DayByDay Itinerarie</title>
     
-    <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 
     <!-- font awesome cdn file link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <script src="https://kit.fontawesome.com/9a3046fe22.js" crossorigin="anonymous"></script>
 
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
@@ -26,7 +27,7 @@
 
 <header>
 
-<a href="#" class="logo" style="color: #E69035;">NomadVibes</a>
+<a href="#" class="logo" style="color: #E69035;">NomadVibe</a>
 
 <nav class="navbar">
     <ul>
@@ -50,8 +51,8 @@
 
 <section class="home" id="home">
 
-<div class="video">
-    <video src="images/production ID_4333052.mp4" loop muted autoplay></video>
+  <div class="video">
+    <!-- <video src="images/production ID_4333052.mp4" loop muted autoplay></video> -->
 </div>
 
 <div class="content">
@@ -59,7 +60,7 @@
     <p></p>
 </div>
 
-<div class="form-container">
+<div class="form-container" id="form">
     <form action="">
 
         <h3>Your Travel </h3>
@@ -117,7 +118,30 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                     </div>
-                <a href="#"><button class="btn">check it out!</button></a>
+                <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   Check it out!
+                  </button></a>
+               
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Cupom Desconto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="images/qr-code-37x37.png" alt="qrcode">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis excepturi asperiores cupiditate perferendis libero ab. Enim, molestiae dignissimos ab, illum, vitae autem et exercitationem adipisci soluta fugit recusandae hic?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
                 </div>
                 </div>
                 </div>
@@ -141,7 +165,9 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#"><button class="btn">check it out!</button></a>
+                <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Check it out!
+                   </button></a>
                 </div>
                 </div>
               </div>
@@ -164,7 +190,9 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#"><button class="btn">check it out!</button></a>
+                <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Check it out!
+                   </button></a>
                 </div>
                 </div>
               </div>
@@ -188,7 +216,9 @@
                     <i class="fas fa-star-half-alt"></i>
                     
                 </div>
-                <a href="#"><button class="btn">check it out!</button></a>
+                <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Check it out!
+                   </button></a>
                 </div>
               </div>
             </div>
@@ -357,7 +387,7 @@
 
 <section class="footer">
 
-    <h1 class="credit">created by <span>NomadVibes</span> | all rights reserved.</h1>
+    <h1 class="credit">created by <span>NomadVibe</span> | all rights reserved.</h1>
     
     <div class="icons">
         <a href="#" class="fab fa-facebook-f" style="color: #E69035;"></a>
@@ -373,7 +403,6 @@
 
 
 <!-- jquery cdn link  -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- Bootstrap  -->

@@ -27,6 +27,11 @@ a{
   color: #3DA6A3;
 }
 
+
+#form{
+  opacity: 90%;
+  }
+
 html{
   overflow-x: hidden;
   font-size: 62.5%;
@@ -118,13 +123,15 @@ header .fa-bars{
   padding:2rem 10rem;
 }
 
-.home .video video{
+.home .video {
   position: absolute;
   top:0; left:0;
   height:100%;
   width: 100%;
-  object-fit: cover;
   z-index: -1;
+  background-image: url("images/pracadocomercio.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .home .content{

@@ -112,13 +112,15 @@ header .fa-bars{
   padding:2rem 10rem;
 }
 
-.home .video video{
+.home .video {
   position: absolute;
   top:0; left:0;
   height:100%;
   width: 100%;
-  object-fit: cover;
   z-index: -1;
+  background-image: url("images/pracadocomercio.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -143,7 +145,7 @@ header .fa-bars{
 margin-left: 25%;
 width: 50%;
 height: auto;
-opacity: 80%;
+opacity: 95%;
 }
 
 .home .form-container form h1{
