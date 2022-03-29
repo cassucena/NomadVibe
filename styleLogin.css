@@ -195,6 +195,31 @@ header .fa-bars{
   border:.2rem solid #0098a1;
   color:#0098a1;
   background: none;
+
+}
+
+/* validation styles */
+
+input.valid{
+  border-color: #36cc36;
+}
+input.invalid{
+  border-color: orange;
+}
+input + p{
+  font-family: arial;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 10px;
+  color: orange;
+  opacity: 0;
+  height: 0;
+}
+input.invalid + p{
+  opacity: 1;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .feature{

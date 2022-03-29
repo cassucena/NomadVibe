@@ -584,6 +584,11 @@ header .fa-bars{
   margin-left: 10%;
 }
 
+.list-group-item:hover{
+ color: black;
+ background-color: gold;
+}
+
 
 
 /* media queries  */
